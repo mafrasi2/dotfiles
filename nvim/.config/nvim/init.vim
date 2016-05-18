@@ -15,6 +15,7 @@ Plug('vim-airline/vim-airline-themes')
 Plug('tpope/vim-surround')
 Plug('christoomey/vim-tmux-navigator')
 Plug('Valloric/YouCompleteMe')
+Plug('Yggdroot/indentLine')
 call plug#end()
 
 colorscheme kalisi
@@ -41,3 +42,5 @@ set is
 " close nvim when NERDTree is the last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+let g:indentLine_char = '┆'
+let g:indentLine_color_term = 29
