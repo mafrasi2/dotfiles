@@ -1,3 +1,4 @@
+" download vim-plug, if it doesn't exist already
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -21,15 +22,20 @@ set background=dark
 
 let g:airline_powerline_fonts = 1
 
+" display line numbers
 set number
 
+" open NERDTree on start
 autocmd VimEnter * NERDTree
+" focus the editor window, not NERDTree on start
+autocmd VimEnter * wincmd p
 
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+" activate iterative search
 set is
 
 " close nvim when NERDTree is the last window
