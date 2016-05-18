@@ -13,6 +13,7 @@ Plug('vim-airline/vim-airline')
 Plug('vim-airline/vim-airline-themes')
 Plug('tpope/vim-surround')
 Plug('christoomey/vim-tmux-navigator')
+Plug('Valloric/YouCompleteMe')
 call plug#end()
 
 colorscheme kalisi
@@ -30,4 +31,7 @@ set softtabstop=2
 set expandtab
 
 set is
+
+" close nvim when NERDTree is the last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
