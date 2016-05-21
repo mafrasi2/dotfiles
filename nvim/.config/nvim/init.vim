@@ -18,6 +18,8 @@ Plug('christoomey/vim-tmux-navigator')
 Plug('Valloric/YouCompleteMe')
 Plug('Yggdroot/indentLine')
 Plug('jmcantrell/vim-virtualenv')
+Plug('tpope/vim-fugitive')
+Plug('rust-lang/rust.vim')
 call plug#end()
 
 colorscheme kalisi
@@ -55,3 +57,6 @@ map ä ]
 map Ö {
 map Ä }
 map ß /
+
+let g:ycm_rust_src_path = '/home/max/.multirust/toolchains/1.7.0/src'
+
