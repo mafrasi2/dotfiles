@@ -22,6 +22,7 @@ Plug('tpope/vim-fugitive')
 Plug('rust-lang/rust.vim')
 Plug('xolox/vim-misc')
 Plug('xolox/vim-session')
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 call plug#end()
 
 colorscheme kalisi
