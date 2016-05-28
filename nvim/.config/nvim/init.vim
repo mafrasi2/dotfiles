@@ -20,6 +20,8 @@ Plug('Yggdroot/indentLine')
 Plug('jmcantrell/vim-virtualenv')
 Plug('tpope/vim-fugitive')
 Plug('rust-lang/rust.vim')
+Plug('xolox/vim-misc')
+Plug('xolox/vim-session')
 call plug#end()
 
 colorscheme kalisi
@@ -58,5 +60,5 @@ map Ö {
 map Ä }
 map ß /
 
-let g:ycm_rust_src_path = '/home/max/.multirust/toolchains/1.7.0/src'
-
+let g:ycm_rust_src_path = '~/.multirust/toolchains/1.7.0/src'
+let g:ycm_autoclose_preview_window_after_insertion = 1
