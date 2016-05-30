@@ -53,6 +53,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:indentLine_char = '┆'
 let g:indentLine_color_term = 29
 
+" make ctrlp open files in new tab by default
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
 " remap extra keys to us defaults in normal mode
 map ü <C-]>
 map ö [
