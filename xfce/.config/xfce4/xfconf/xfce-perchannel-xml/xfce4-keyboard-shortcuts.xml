@@ -44,7 +44,7 @@
       <property name="XF86AudioLowerVolume" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -2%"/>
       <property name="XF86AudioRaiseVolume" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +2%"/>
       <property name="XF86AudioMute" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="sh -c &apos;xfce4-terminal -T nvim --fullscreen --hide-menubar --hide-borders &amp;&amp; wmctrl -r &quot;nvim&quot; -t 1 &amp;&amp; wmctrl -a &quot;nvim&quot;&apos;"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="sh -c &apos;xfce4-terminal -T nvim --fullscreen --hide-menubar --hide-borders &amp; sleep 0.2 &amp;&amp; wmctrl -r nvim -t 1 &amp;&amp; wmctrl -a nvim&apos;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
