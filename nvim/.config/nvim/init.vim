@@ -8,7 +8,6 @@ endif
 call plug#begin()
 Plug('tpope/vim-commentary')
 Plug('freeo/vim-kalisi')
-Plug('kien/ctrlp.vim')
 Plug('jistr/vim-nerdtree-tabs')
 Plug('scrooloose/nerdtree')
 Plug('vim-airline/vim-airline')
@@ -24,6 +23,8 @@ Plug('xolox/vim-misc')
 Plug('xolox/vim-session')
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 Plug('xolox/vim-notes')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 colorscheme kalisi
