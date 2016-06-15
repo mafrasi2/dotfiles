@@ -71,3 +71,6 @@ map ß /
 
 let g:ycm_rust_src_path = '~/.multirust/toolchains/1.7.0/src'
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+map <C-P> :Files<CR>
+
