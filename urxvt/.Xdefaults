@@ -17,4 +17,5 @@ URxvt.tabbed.secondaryScroll: true
 URxvt.tabbed.font: xft:DejaVu Sans Mono for Powerline Book:pixelsize=12
 URxvt*inheritPixmap: true 
 URxvt*shading: 70
+URxvt.letterSpace: -1
 
