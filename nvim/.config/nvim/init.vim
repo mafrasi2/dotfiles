@@ -35,12 +35,6 @@ let g:airline_powerline_fonts = 1
 " display line numbers
 set number
 
-" open NERDTree on start
-"autocmd VimEnter * NERDTreeTabsOpen
-let g:nerdtree_tabs_open_on_console_startup = 1
-" focus the editor window, not NERDTree on start
-autocmd VimEnter * wincmd p
-
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -74,3 +68,10 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 map <C-P> :Files<CR>
 
+let g:session_autoload = 'no'
+
+" use system clipboard
+set clipboard=unnamedplus
+
+" allow buffers to be abandoned
+set hidden
