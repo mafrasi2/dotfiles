@@ -11,16 +11,7 @@ URxvt.tabbed.saveLines: 1000
 URxvt.tabbed.scrollBar: false
 URxvt.tabbed.secondaryScroll: true
 URxvt.tabbed.font: xft:DejaVu Sans Mono for Powerline Book:pixelsize=12
-#URxvt*inheritPixmap: true 
-#URxvt*shading: 70
-
-URxvt.iconFile: /usr/share/icons/Paper/24x24/apps/terminal.png
-#URxvt.transparent:   true
-##URxvt.shading:       20
-#urxvt*depth: 32
-#urxvt*background: rgba:0000/0000/0200/c800
-#urxvt*blurRadius: 70x70
-#urxvt*tintColor: grey
-
-URxvt.background-expr: rootalign keep { blur 70, root, load "/home/max/Wallpapers/IMG_0749.JPG" }
+URxvt*inheritPixmap: true 
+URxvt*shading: 70
+URxvt.letterSpace: -1
 
