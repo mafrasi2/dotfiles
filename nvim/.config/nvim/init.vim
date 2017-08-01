@@ -25,6 +25,8 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 Plug('xolox/vim-notes')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'davidhalter/jedi-vim'
+"Plug 'lambdalisue/vim-pyenv'
 call plug#end()
 
 colorscheme kalisi
@@ -75,3 +77,16 @@ set clipboard=unnamedplus
 
 " allow buffers to be abandoned
 set hidden
+
+" Enable llvm syntax highlighting
+augroup filetype
+  au! BufRead,BufNewFile *.ll     set filetype=llvm
+augroup END
+augroup filetype
+  au! BufRead,BufNewFile *.td     set filetype=tablegen
+augroup END
+
+set mouse=a
+
+" alias jj as <Esc>
+imap jj <Esc>
