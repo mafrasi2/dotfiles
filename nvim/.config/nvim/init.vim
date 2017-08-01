@@ -20,7 +20,6 @@ Plug('jmcantrell/vim-virtualenv')
 Plug('tpope/vim-fugitive')
 Plug('rust-lang/rust.vim')
 Plug('xolox/vim-misc')
-Plug('xolox/vim-session')
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 Plug('xolox/vim-notes')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -69,8 +68,6 @@ let g:ycm_rust_src_path = '~/.multirust/toolchains/1.7.0/src'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 map <C-P> :Files<CR>
-
-let g:session_autoload = 'no'
 
 " use system clipboard
 set clipboard=unnamedplus
