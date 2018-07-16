@@ -6,26 +6,14 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-Plug('tpope/vim-commentary')
 Plug('freeo/vim-kalisi')
-Plug('jistr/vim-nerdtree-tabs')
-Plug('scrooloose/nerdtree')
-Plug('vim-airline/vim-airline')
-Plug('vim-airline/vim-airline-themes')
-Plug('tpope/vim-surround')
-Plug('christoomey/vim-tmux-navigator')
-Plug('Valloric/YouCompleteMe')
 Plug('Yggdroot/indentLine')
-Plug('jmcantrell/vim-virtualenv')
 Plug('tpope/vim-fugitive')
 Plug('rust-lang/rust.vim')
 Plug('xolox/vim-misc')
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 Plug('xolox/vim-notes')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'davidhalter/jedi-vim'
-"Plug 'lambdalisue/vim-pyenv'
 call plug#end()
 
 colorscheme kalisi
@@ -87,3 +75,6 @@ set mouse=a
 
 " alias jj as <Esc>
 imap jj <Esc>
+
+autocmd Filetype json let g:indentLine_setConceal = 0
+
