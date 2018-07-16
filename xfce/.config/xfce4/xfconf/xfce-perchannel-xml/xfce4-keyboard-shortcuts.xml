@@ -19,7 +19,7 @@
       <property name="XF86Mail" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="&lt;Alt&gt;F3" type="string" value="xfce4-appfinder">
+      <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-applicationsmenu"/>
@@ -36,15 +36,15 @@
       <property name="override" type="bool" value="true"/>
       <property name="Super_L" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="XF86AudioPlay" type="string" value="playerctl play-pause"/>
-      <property name="XF86MonBrightnessUp" type="string" value="xbacklight -inc 2"/>
-      <property name="XF86MonBrightnessDown" type="string" value="xbacklight -dec 2"/>
       <property name="XF86AudioNext" type="string" value="playerctl next"/>
       <property name="XF86AudioPrev" type="string" value="playerctl previous"/>
       <property name="XF86AudioLowerVolume" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -2%"/>
       <property name="XF86AudioRaiseVolume" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +2%"/>
       <property name="XF86AudioMute" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="urxvtc -e tmux"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="urxvtc -title nvim2 -e sh -c &apos;wmctrl -r nvim2 -b toggle,fullscreen &amp;&amp; wmctrl -r nvim2 -t 1 &amp;&amp; wmctrl -a nvim2 &amp;&amp; tmux&apos;"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="urxvtc"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="urxvtc -title nvim2 -e sh -c &apos;wmctrl -r nvim2 -b toggle,fullscreen &amp;&amp; wmctrl -r nvim2 -t 1 &amp;&amp; wmctrl -a nvim2 &amp;&amp; fish&apos;"/>
+      <property name="XF86MonBrightnessUp" type="string" value="brightnessctl  set +5%"/>
+      <property name="XF86MonBrightnessDown" type="string" value="brightnessctl  set 5%-"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
