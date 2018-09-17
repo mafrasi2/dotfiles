@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman -Syy stow neovim python-pip fish tmux rxvt-unicode-terminfo
+sudo pacman -Syy stow neovim python-pip fish tmux rxvt-unicode-terminfo ripgrep fd
 pip install --user neovim
 
 stow nvim
