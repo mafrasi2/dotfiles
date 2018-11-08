@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pacman -Syy stow neovim python-pip fish tmux rxvt-unicode-terminfo ripgrep fd curl
+sudo pacman -Syy stow neovim python-pip fish tmux rxvt-unicode-terminfo ripgrep fd curl the_silver_searcher
 pip install --user neovim
 
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
