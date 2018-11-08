@@ -7,11 +7,11 @@ endif
 
 call plug#begin()
 Plug('freeo/vim-kalisi')
-Plug('Yggdroot/indentLine')
+"Plug('Yggdroot/indentLine')
 Plug('tpope/vim-fugitive')
 Plug('rust-lang/rust.vim')
-Plug('xolox/vim-misc')
-Plug('xolox/vim-notes')
+"Plug('xolox/vim-misc')
+"Plug('xolox/vim-notes')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
@@ -78,3 +78,5 @@ imap jj <Esc>
 
 autocmd Filetype json let g:indentLine_setConceal = 0
 
+" respect .gitignore
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
